@@ -1,5 +1,6 @@
 import React from 'react';
 import ShopItemFunc from './components/ShopItemFunc';
+import ShopItemClass from './components/ShopItemClass';
 import './css/main.css';
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
         <div className='highlight-overlay'></div>
       </div>
       <div className="window">
-        <ShopItemFunc item={item} />
+        <ShopItemFunc {...item} />
+        {/*<ShopItemClass {...item} />*/}
       </div>
     </div>
   );
